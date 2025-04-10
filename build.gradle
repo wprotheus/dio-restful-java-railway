@@ -7,6 +7,12 @@ plugins {
 group = 'org.wprotheus'
 version = '0.0.1-SNAPSHOT'
 
+jar {
+    archiveBaseName.set("dio-restful-java-railway")
+    archiveVersion.set("0.0.1-SNAPSHOT")
+}
+
+
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)
@@ -26,27 +32,23 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.6'
     implementation 'org.hibernate.validator:hibernate-validator:8.0.2.Final'
-    implementation 'jakarta.validation:jakarta.validation-api:3.1.1'
-    implementation 'org.postgresql:postgresql:42.7.5'
-
+    runtimeOnly 'org.postgresql:postgresql:42.7.5'
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     runtimeOnly 'com.h2database:h2'
-    runtimeOnly 'org.postgresql:postgresql'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
 }
 
 tasks.jar {
     manifest {
         attributes["Main-Class"] = "org.wprotheus.diorestfuljavarailway.Application"
     }
-}
-
-tasks.named('test') {
-    useJUnitPlatform()
 }

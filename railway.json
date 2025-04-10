@@ -5,7 +5,6 @@
     "buildCommand": "gradle build"
   },
   "deploy": {
-    "startCommand": "java -jar build/libs/dio-restful-java-railway-0.0.1-SNAPSHOT.jar",
-    "restartPolicy": "ON_FAILURE"
+    "startCommand": "java -jar build/libs/dio-restful-java-railway-0.0.1-SNAPSHOT.jar"
   }
 }
