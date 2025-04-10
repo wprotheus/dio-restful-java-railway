@@ -6,7 +6,7 @@
 
 ---
 
-### Publicando uma API REST na Nuvem Usando Java 21 LTS, Spring Boot 3.4.4 e Railway
+### Publicando uma API REST na Nuvem Usando Java 17 LTS, Spring Boot 3.4.4 e Railway
 
 Atividade executada, replicando os passos/codificação contidos nos vídeos, sendo assim uma cópia da implementação
 apresentada, e conforme orientações abaixo, retiradas
@@ -20,7 +20,7 @@ do [Descrição do Desafio](https://web.dio.me/lab/publicando-sua-api-rest-na-nu
 
 > Já dominamos o universo do desenvolvimento e construímos uma API REST utilizando o Java 17, a versão LTS mais recente repleta de novidades. Com o poder do Spring Boot 3, otimizamos nossa produtividade graças à sua habilidade de autoconfiguração. Além disso, facilitamos o acesso aos bancos de dados SQL com o auxílio do Spring Data JPA. Também destacamos a importância de uma documentação de API robusta e clara, utilizando o OpenAPI, ou Swagger. E com o Railway, simplificamos o Deploy de nossas soluções na nuvem. Agora, é hora de embarcar em um novo desafio e explorar um domínio de aplicação diferente, mantendo nosso foco em inovar e desenvolver soluções de alto padrão!  
 > 
-<small>Obs.: , Java 21 LTS e Spring Boot 3.4.4</small>
+<small>Obs.: Java 17 LTS e Spring Boot 3.4.4</small>
 
 ### Descrição
 
@@ -35,7 +35,7 @@ do [Descrição do Desafio](https://web.dio.me/lab/publicando-sua-api-rest-na-nu
 > importa: o desenvolvimento das nossas soluções!
 >
 > Spring | REST | SQL | PostgreSQL | Railway  
-<small>Obs.: , Java 21 LTS e Spring Boot 3.4.4</small>
+<small>Obs.: , Java 17 LTS e Spring Boot 3.4.4</small>
 
 
 ## Diagrama de Classes

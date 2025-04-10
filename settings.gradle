@@ -1,1 +1,18 @@
 rootProject.name = 'dio-restful-java-railway'
+
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+toolchainManagement {
+    jvm {
+        javaRepositories {
+            repository("oracle") {
+                resolverClass = "org.gradle.jvm.toolchain.internal.install.DefaultJvmToolchainResolver"
+            }
+        }
+    }
+}
